@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <script src="https://kit.fontawesome.com/375301cf07.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+
+        #cont {
+            /* border: 2px solid black; */
+            border-radius: 7px;
+            margin: 20px 100px;
+            padding: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+            
+        }
+
+
+        #cont1 {
+            height: 650px;
+            width: 49%;
+            margin: 0px;
+            padding: 0px;
+            /* display: inline-block;
+            margin-top: -200px; */
+            border-bottom-left-radius: 12px;
+            border-top-left-radius: 15px;
+            background-image: url("bgcont1.jpg");
+            background-size: cover;
+            width: 100%;
+            height: auto;
+            filter:opacity(70%);
+        }
+        
+        #cont2 {
+            height: 650px;
+            width: 49%;
+            margin: 0px;
+            /* padding-top: -200px;
+            display: inline-block; */
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+            background-color: #fff;
+            overflow: hidden;
+
+        }
+        
+        @media screen and (max-width:600px){
+        #cont1{
+            display:none;
+        }
+        #cont2{
+            width: 100%;
+            }
+        }
+        input,
+        label {
+            display: block;
+            
+        }
+
+        body {
+            font-family: Arial;
+            font-size: 17px;
+            padding: 8px;
+            background-image: url('bg.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            max-width: 100%;
+            height: 100%;
+            
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .row {
+            display: -ms-flexbox;
+            /* IE10 */
+            display: flex;
+            -ms-flex-wrap: wrap;
+            /* IE10 */
+            flex-wrap: wrap;
+            margin: 0 -16px;
+        }
+
+        .col-25 {
+            -ms-flex: 25%;
+            /* IE10 */
+            flex: 25%;
+        }
+
+        .col-50 {
+            -ms-flex: 50%;
+            /* IE10 */
+            flex: 50%;
+        }
+        
+        .icon-container {
+            margin-bottom: 20px;
+            padding: 7px 0;
+            font-size: 24px;
+        }
+        
+        .btn {
+            background-color: #b83bdc;
+            /* background-color: #cf7926; */
+            color: white;
+            padding: 12px;
+            margin: 10px auto;
+            border: none;
+            width: 90%;
+            border-radius: 7px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+        
+        .btn:hover {
+            background-color: #cf7926;
+        }
+        
+        a {
+            color: #2196F3;
+        }
+        
+        hr {
+            border: 1px solid lightgrey;
+        }
+        
+        span.price {
+            float: right;
+            color: grey;
+        }
+        
+        /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+        @media (max-width: 800px) {
+            .row {
+                flex-direction: column-reverse;
+            }
+            
+            .col-25 {
+                margin-bottom: 20px;
+            }
+        }
+        
+        
+        
+        
+        .col-75 {
+            -ms-flex: 75%;
+            /* IE10 */
+            flex: 75%;
+        }
+        
+        h3 {
+            margin: 16px auto;
+            padding: 2px;
+            width: 67px;
+            border: 2px solid red;
+        }
+        
+        .col-25,
+        .col-50,
+        .col-75 {
+            padding: 0 16px;
+        }
+        
+        .container {
+            background-color: #f2f2f2;
+            padding: 5px 20px 15px 20px;
+
+            border: 1px solid lightgrey;
+            border-radius: 3px;
+        }
+        
+        input[type=text] {
+            width: 20rem;
+            margin-bottom: 36px;
+            padding: 12px;
+            /* border: 1px solid #b83bdc; */
+            border-radius: 3px;
+            border: none;
+            border-bottom: 3px solid #b83bdc;
+            outline: none;
+            
+        }
+        
+
+        
+        
+        label {
+            margin-bottom: 10px;
+            display: block;
+        }
+        
+        label,
+        input {
+            margin: 4px 11px;
+        }
+        
+
+
+        
+        </style>
+</head>
+
+<body>
+
+    <div id="cont">
+
+        <div id="cont1">
+            <img src="#" alt="">
+        </div>
+
+        <div id="cont2">
+
+
+            <form action="/action_page.php">
+
+                <div class="row">
+                    <div class="col-50">
+                        <h3> Form </h3>
+                        <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Shivaji">
+                        <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                        <input type="text" id="email" name="email" placeholder="shivaji@example.com">
+                        <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                        <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+                        <label for="city"><i class="fa fa-institution"></i> City</label>
+                        <input type="text" id="city" name="city" placeholder="Navi Mumbai">
+
+                        <div class="row">
+                            <div class="col-50">
+                                <label for="state">State</label>
+                                <input type="text" id="state" name="state" placeholder="India">
+                            </div>
+                            <div class="col-50">
+                                <label for="amount">Amount</label>
+                                <input type="text" id="amount" name="amount" placeholder="100001">
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+                <input type="submit" value="Continue to checkout" class="btn">
+            </form>
+
+
+        </div>
+
+    </div>
+
+    </div>
+
+</body>
+
+</html>
