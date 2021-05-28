@@ -29,19 +29,7 @@ else{
     $stmt->close();
     $conn->close();
 }
-
-
-
-
-
-
-
 ?>
-<style>
-    body{
-        background-image: url(Children.jpg);
-    }
-</style>
 
 <form action="" method="POST">
 <script
@@ -62,4 +50,8 @@ else{
 
 <input type="hidden" custom="Hidden Element" name="hidden">
 </form>
+
+
+
+
 
