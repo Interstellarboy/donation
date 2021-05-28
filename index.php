@@ -61,7 +61,7 @@
 			if ($num_row > 0) 
 				{			
 					$_SESSION['user_id']=$row['user_id'];
-					header('location:admin.php');
+					header('location:Final/HOME/index.html');
 					
 				}
 			else

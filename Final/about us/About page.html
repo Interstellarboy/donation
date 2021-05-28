@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <title>About</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+
+        html {
+            box-sizing: border-box;
+        }
+
+        *,
+        *:before,
+        *:after {
+            box-sizing: inherit;
+        }
+
+        .column {
+            float: left;
+            width: 25%;
+            margin-bottom: 8px;
+            padding: 0 8px;
+        }
+
+        .Info {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            margin: 8px;
+        }
+
+        .About {
+            padding: 30px;
+            height: 200px;
+            text-align: center;
+            font-style: italic;
+            background-color: #5e8334;
+            color: white;
+        }
+
+        .container {
+            padding: 0 16px;
+        }
+
+        .container::after,
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .Designation {
+            color: rgb(104, 158, 54);
+        }
+
+        @media screen and (max-width: 650px) {
+            .column {
+                width: 90%;
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="logo.png" alt="" width="50" height="30" />
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="..//organisation/organisation.html">Organisation</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About us</a>
+              </li>
+    
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Domain
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Covid-19</a></li>
+                  <li><a class="dropdown-item" href="#">Orphanage</a></li>
+                  <li><a class="dropdown-item" href="#">cancer patients</a></li>
+                  <li><a class="dropdown-item" href="#"></a></li>
+                </ul>
+              </li>
+            </ul>
+            <div class="mx-6">
+              <button class="btn btn-secondary" data-toggle="modal" data-target="#loginModal">Login</button>
+              <a class="btn btn-danger" href="#" role="button">SignUp</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    <div class="About">
+        <h1>This is us</h1>
+        <p>There are people suffering and we decided to take this initiative</p>
+    </div>
+    <h2 style="text-align: center">These are the members</h2>
+    <div class="column">
+        <div class="Info">
+            <img src="Alpit.jpg" alt="Alpit" style="width:50%">
+            <div class="container">
+                <h3>Alpit Sonawane</h3>
+                <p class="Designation">Co-Founder</p>
+                <p>Gareebo ka messi</p>
+                <p>Alpit@gmail.com</p>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="column">
+        <div class="Info">
+            <img src="shubham.jpg" alt="Shubham" style="width:50%">
+            <div class="container">
+                <h3>Shubham Thakur</h3>
+                <p class="Designation">Co-Founder</p>
+                <p>Shambar takke</p>
+                <p>Shubham@gmail.com</p>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="column">
+        <div class="Info">
+            <img src="Rohit1.jpg" alt="Rohit" style="width:50%">
+            <div class="container">
+                <h3>Rohit Wagmare</h3>
+                <p class="Designation">Co-Founder</p>
+                <p>Chyawanprash</p>
+                <p>Rohit@gmail.com</p>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="column">
+        <div class="Info">
+            <img src="ganesh.jpg" alt="Ganesh" style="width:50%">
+            <div class="container">
+                <h3>Ganesh Jadhav</h3>
+                <p class="Designation">Co-Founder</p>
+                <p>Rock on</p>
+                <p>Ganesh@gmail.com</p>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
