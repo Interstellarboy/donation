@@ -37,6 +37,11 @@ else{
 
 
 ?>
+<style>
+    body{
+        background-image: url(Children.jpg);
+    }
+</style>
 
 <form action="" method="POST">
 <script
